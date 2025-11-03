@@ -16,5 +16,7 @@
 # # Voorbeeldgebruik
 # lijst = ["mark", "elwyn", "nova", "frans"]
 # resultaat = format_namen(lijst)
-# print(resultaat)  # Output: Mark, Elwyn, Nova en Frans
+
+
+
 
