@@ -1,0 +1,30 @@
+def write_file(text):
+    path = "mapje\\test.txt"
+    with open(path, 'w') as file:
+        file.write(text+"\n")
+
+def read_file():
+    path = os.path.join("mapje", "test.txt")
+    with open(path, 'r') as file:
+        print(file.readlines())
+
+def read_file_for():
+    path = "mapje/test.txt"
+    with open(path, 'r') as file:
+        for line in file:
+            print(line, end="")
+
+
+def append_file(text):
+    path = "mapje/test.txt"
+    with open(path, 'a') as file:
+        file.write(text+"\n")
+
+
+
+
+write_file("Hallo wereld")
+append_file("Nog een regel")
+append_file("Een derde regel")
+read_file()
+read_file_for()
